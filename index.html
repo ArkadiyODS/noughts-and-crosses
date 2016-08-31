@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html  lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta charset="utf-8" />
+    <title>КРЕСТИКИ - НОЛИКИ</title>
+    <style type="text/css">
+      body {
+      background-image:url("images/sheet.jpg");
+      }
+      #sheet {
+      position: absolute;
+      margin: 100px;
+      left: 100px;
+      width: 1200px; 
+      height: 1500px;
+      float: left;
+      }
+      div {
+      position: absolute;
+      width:80px;
+      height:80px;
+      }
+      h2  {
+      width: 100%;
+      text-decoration: underline;
+      color: rgb(32, 50, 184);
+      font-size: 50px;
+      position:absolute;
+      left: 500px;
+      top:0px;
+      }
+      #draft {
+      position:fixed;
+      color: rgb(32, 50, 184);
+      font-size: 20px;
+      font-style: italic;
+      }
+      button { 
+        position: absolute;
+        background: none;
+        border: none;
+        color: rgb(32, 50, 184);
+        font-size: 40px; 
+        font-style: italic;
+        }
+
+        #AI { 
+        top: 30px;
+        left: 0px; 
+        color: red;
+        }
+
+        #HU { 
+        top: 100px;
+        color: green;
+        left: 500px; 
+        }
+
+        #RESTART {       
+        position:fixed; 
+        display:none; 
+        top: 400px; 
+        }
+
+        body {
+            
+            font-style:italic;
+        }
+        pre {
+             font-style:italic;
+             font-family: cursive;
+        }
+
+
+    </style>
+ 
+</head>
+<body>
+  <h2>Крестики - Нолики</h2>
+     <div id="sheet">
+      
+
+
+    </div>
+  <div id="draft"></div>
+    <button id="RESTART" type="button" onmouseover = "ChangeSize(this)"  onmouseout = "ReturnSize(this)" onclick="Restart();">ЗАНОВО</button>
+
+  <script src="script.js"> </script>
+
+</body>
+</html>
+ 
